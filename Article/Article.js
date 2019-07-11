@@ -103,10 +103,11 @@ const articleData = [
 
 const articles = document.querySelector('.articles');
 
-articles.appendChild(createArticle('i did it', 'Jul 22nd, 2018', 'im done'));
+articles.appendChild(createArticle('Check This Out!!!', 'Jul 22nd, 2018', 'This is refactored'));
 
+// block that generates each article onto the page
 articleData.forEach((data) => {
-	console.log('creating panel:', data.title);
+	// console.log('creating panel:', data.title);
 	articles.appendChild(createArticle(data.title, data.date, data.content));
 });
 
